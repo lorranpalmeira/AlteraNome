@@ -8,7 +8,6 @@ $para = "tst2"
 
 <#
    Altera o nome dos diretórios e subDiretórios se der match no Nome
-   Last updated: 1666-09-02
 #>
 
 Get-ChildItem $dir -Recurse -Filter *$de* | Rename-Item -NewName { $_.name -replace $de, $para} -verbose
