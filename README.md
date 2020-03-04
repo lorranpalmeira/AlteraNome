@@ -1,5 +1,5 @@
 # AlteraNome
-
+'''
 $dir = "c:/temp/"
 
 $de = "tst1"
@@ -23,3 +23,4 @@ Get-ChildItem $dir'*.txt' -Recurse | ForEach {
      (Get-Content $_ | ForEach  { $_ -replace $de, $para }) |
      Set-Content $_
 }
+'''
